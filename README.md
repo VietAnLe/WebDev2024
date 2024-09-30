@@ -10,7 +10,14 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name + Student ID:
+    - Lê Việt Ân: 22BI13009
+    - Bùi Minh Đức: 22BI13085
+    - Phạm Ngọc Phương Anh: 22BI13037
+    - Nguyễn Đức Dũng: 22BI13106
+    - Phạm Chí Bách: 22BI13055
+    - Trần Mạnh Duy: 22BI13126
+
+* Group ID: Group 17
+
+* Project Name: Event Booking System
