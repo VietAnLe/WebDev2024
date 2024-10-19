@@ -481,6 +481,7 @@ section{
     color: #FFF;
     font-size: 4.5rem;
     text-transform: uppercase;
+    text-align: center;
 }
 .about .title h3 span{
     color: var(--main-color);
