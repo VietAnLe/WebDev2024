@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer Website</title>
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Custome swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+<!--Duc's code start-->
+<!-- Header section starts -->
+<header class="header">
+    <a href="index.html" class="logo"><span>Even</span>tura</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#voucher">Voucher</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="price.html">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </nav>
+
+    <div class="user-actions">
+        <select id="language-select" aria-label="Change Language">
+            <option value="en" data-flag="imgs/Eng.png">English</option>
+            <option value="es" data-flag="imgs/Spain.png">Spanish</option>
+            <option value="fr" data-flag="imgs/France.png">French</option>
+        </select>
+    </div>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+</header>
+
+<!--Home section starts-->
+<section class = "home" id="home">
+
+    <div class="content">
+
+        <h3> join the fun! Grab your <span> event <br> dive into the story! </span></h3>
+
+        <a href="#" class="btn">contact us</a>
+
+    </div>
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/slide-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/slide-6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+<!-- Home section ends -->
+
+
+<!-- voucher section start -->
+<section class="voucher" id="voucher">
+    <h1 class="heading">Our <span>Vouchers</span></h1>
+    
+    <div class="box-container">
+        
+        <!-- First-time Login Voucher -->
+        <div class="box">
+            <i class="fas fa-user-plus"></i> <!-- First-time User Icon -->
+            <h3>Welcome Offer</h3>
+            <p>Thank you for joining Eventura! As a first-time user, enjoy an exclusive voucher on your first event booking.</p>
+            <p><span><strong>10% discount</strong></span> on your <span>first ticket purchase!</span></p>
+        </div>
+
+        <!-- Frequent Buyers Voucher -->
+        <div class="box">
+            <i class="fas fa-ticket-alt"></i> <!-- Frequent Buyers Icon -->
+            <h3>Frequent Buyer Rewards</h3>
+            <p>Your loyalty matters! As a token of appreciation for purchasing multiple tickets, we’ve got a special reward just for you.</p>
+            <p><span><strong>15% discount</strong></span> when you <span>buy 3 or more tickets!</span></p>
+        </div>
+
+        <!-- Referral Program (Optional Addition) -->
+        <div class="box">
+            <i class="fas fa-gift"></i> <!-- Referral Icon -->
+            <h3>Referral Bonus</h3>
+            <p>Invite your friends to join the fun! Share Eventura and enjoy a reward every time someone signs up using your referral link.</p>
+            <p><span><strong>5% off</strong></span> on your <span>next event</span> for <span>each referral!</span></p>
+        </div>
+
+    </div> <!-- End of box-container -->
+</section>
+
+<!--Duc's code end-->
+
+<!--Phanh's code start-->
+<!-- About Start -->
+<section class="about" id="about">
+    <div class="title">
+        <h3>About <span>us</span></h3>
+        <h1>Welcome to Eventura</h1>
+    </div>
+   
+    <div class="statement">
+        <p>
+            "Our mission is to connect people with exciting experiences, making event attendance easy and accessible for everyone."
+        </p>
+    </div>
+    
+    <div class="row">
+        <div class="image">
+            <img src="imgs/about1.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <p>
+                Eventura is a dynamic event booking platform designed to connect people with a diverse range of experiences tailored to their interests. Whether you're looking for concerts, festivals, workshops, or local community events, our user-friendly interface makes it simple to discover and secure tickets for the events you love. With real-time updates, secure payment options, and a commitment to quality, we ensure that planning your next outing is as enjoyable as the event itself. Join our vibrant community of event-goers and organizers today, and never miss out on the experiences that matter!
+            </p>
+        </div>
+    </div>
+ </section>
+<!-- About End -->
+<!--Phanh's code end-->
+
+<!--Dung's code start-->
+<!--Gallery section starts-->
+<section class="gallery" id="gallery">
+    <h3 class="heading">Our <span>Gallery</span></h3>
+    <div class="box-container">
+        <div class="box">
+            <img src="imgs/img-1.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>  
+        </div>
+
+        <div class="box">
+            <img src="imgs/img-2.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imgs/img-3.webp" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imgs/workshop.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imgs/img-5.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div> 
+        </div>
+
+        <div class="box">
+            <img src="imgs/exhi.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div> 
+        </div>
+
+        <div class="box">
+            <img src="imgs/img-7.jpeg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imgs/img-8.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>   
+        
+        <div class="box">
+            <img src="imgs/img-9.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>   
+
+        <div class="box">
+            <img src="imgs/match.jpg" alt="">
+            <h3 class="title">Photos and Events</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div> 
+        <!-- Modal for Zoomed Image -->
+        <div id="img-modal-box">
+            <div id="img-modal">
+                <button type="button" id="modal-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button type="button" id="prev-btn" class="flex">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button type="button" id="next-btn" class="flex">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <img src="images/gallery-1.jpg" alt="Zoomed Image">
+            </div>
+        </div>  
+    </div>
+</section>
+
+<!--Gallery section ends-->
+
+<!--Ân's code start-->
+<!-- review section starts -->
+<section class="review">
+
+    <h1 class="heading">client's <span>review</span></h1>
+
+    <div class="review-slider swiper-container">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="imgs/pic-1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>BoB</h3>
+                            <span>Happy client</span>
+                        </div>
+                    </div>
+                    <p>"Eventura made planning our wedding so easy! The venue options were amazing, and the catering was simply outstanding. We couldn't have asked for better service!"</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="imgs/pic-2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>EVA</h3>
+                            <span>Satisfied Client</span>
+                        </div>
+                    </div>
+                    <p>"From start to finish, everything was handled smoothly. The invitation card designs were beautiful, and our guests loved the entertainment. Highly recommend!"</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="imgs/pic-3.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Olivia</h3>
+                            <span>Thrilled Event Organizer</span>
+                        </div>
+                    </div>
+                    <p>"Eventura exceeded all my expectations. The venue was perfect, and the whole process was stress-free. I will definitely use their services again for future events!"</p>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="imgs/pic-4.jpg" alt="">
+                        <div class="user-info">
+                            <h3>JACK</h3>
+                            <span>Grateful User</span>
+                        </div>
+                    </div>
+                    <p>"I was blown away by the custom food options. We had specific dietary requirements, and the team accommodated everything perfectly. Photos and videos turned out fantastic too!"</p>
+                </div>
+            </div>
+    
+    </div>
+
+</section>
+<!-- review section end -->
+<!--Ân's code end-->
+
+<!--Duy's code end-->
+<!-- Contact section start -->
+<!-- Contact section start -->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Your</span> Questions</h1>
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Phone Number" id="phone">
+            <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <textarea name="" placeholder="Your message" id="message" cols="30" rows="10"></textarea>
+        <input type="button" value="Send message" class="btn" id="sendMessageBtn">
+    </form>
+</section>
+<!-- Contact section ends -->
+ <!--Duy's code end-->
+
+
+ <!--Bách's code start-->
+ <!--footer section start-->
+
+<section class ="footer">
+
+    <div class ="box-container">
+
+        <div class = "box">
+            <h3>Branches</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hà Nội </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Đà Nẵng </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Huế </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hải Phòng </a>
+        </div>
+
+        
+        <div class = "box">
+            <h3>Contact Info</h3>
+            <a href="#"><i class="fas fa-phone"></i> 123-123-123 </a>
+            <a href="#"><i class="fas fa-phone"></i> 111-222-333 </a>
+            <a href="#"><i class="fas fa-envelope"></i> booking@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-envelope"></i> service@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam - 100000 </a>
+        </div>
+
+        <div class = "box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook </a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+
+    </div>
+
+    <div class = "credit">Created by <span> Group 17</span> © 2024 Eventura. All right reserved</div>
+</section>
+
+<!--footer section end-->
+
+<!--theme toggler-->
+<div class = "theme-toggler">
+    <div class = "toggle-btn">
+        <i class = "fas fa-cog"></i>
+    </div>
+
+    <h3>Choose Color</h3>
+
+    <div class = "buttons">
+        <div class="theme-btn" style = "background-color: #3867d6;"></div>
+        <div class="theme-btn" style = "background-color: #f7b731;"></div>
+        <div class="theme-btn" style = "background-color: #ff0033;"></div>
+        <div class="theme-btn" style = "background-color: #20bf6b;"></div>
+        <div class="theme-btn" style = "background-color: #fa8231;"></div>
+        <div class="theme-btn" style = "background-color: #fc427b;"></div>
+    </div>
+
+</div>
+<!--Bách's code end-->
+
+
+<!--Custome swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer Website</title>
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+<header class="header">
+    <a href="index.html" class="logo"><span>Even</span>tura</a>
+    <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#voucher">Voucher</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="price.html">Events</a> 
+        <a href="index.html#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </nav>
+    
+    <div class="user-actions">
+        <select id="language-select" aria-label="Change Language">
+            <option value="en" data-flag="imgs/Eng.png">English</option>
+            <option value="es" data-flag="imgs/Spain.png">Spanish</option>
+            <option value="fr" data-flag="imgs/France.png">French</option>
+        </select>
+    </div>
+    
+    <div id="menu-bars" class="fas fa-bars"></div>
+</header>
+
+<section class="price-page">
+    <section class="events-title">
+        <h1>Hot!!! <i class="fas fa-fire"></i></h1>
+    </section>
+
+    <!-- Swiper Container -->
+    <div class="slide-container swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/newbie.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Newbie Festival</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Festival</li>
+                        <li><i class="fas fa-check"></i>Date: 31/11</li>
+                        <li><i class="fas fa-check"></i>Location: Ha Noi </li>
+                        <li><i class="fas fa-check"></i>Price: $20/ticket</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/bts.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">BTS Concert</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Concert</li>
+                        <li><i class="fas fa-check"></i>Date: 31/02</li>
+                        <li><i class="fas fa-check"></i>Location: Hai Phong </li>
+                        <li><i class="fas fa-check"></i>Price: $100/ticket</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/flow.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Flower Workshop</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Workshop</li>
+                        <li><i class="fas fa-check"></i>Date: 31/04</li>
+                        <li><i class="fas fa-check"></i>Location: Ho Chi Minh City </li>
+                        <li><i class="fas fa-check"></i>Price: $15/ticket</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS for Swiper configuration -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
+
+
+    <br>
+    <!-- Title Section -->
+    <section class="events-title">
+        <h1 style="color:aqua">New Events!!!</h1>
+    </section>
+
+    <!-- Swiper Container -->
+    <div class="slide-container swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/cup.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Super Cup</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Sport</li>
+                        <li><i class="fas fa-check"></i>Date: 31/06</li>
+                        <li><i class="fas fa-check"></i>Location: Da Nang </li>
+                        <li><i class="fas fa-check"></i>Price: $8/tiket</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/hue.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">A tour around Hue</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Tour</li>
+                        <li><i class="fas fa-check"></i>Date: 31/09</li>
+                        <li><i class="fas fa-check"></i>Location: Hue </li>
+                        <li><i class="fas fa-check"></i>Price: $35/ticket</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/cos.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Cosplay Festival</h2>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Category: Festival</li>
+                        <li><i class="fas fa-check"></i>Date: 29/02</li>
+                        <li><i class="fas fa-check"></i>Location: Da Lat </li>
+                        <li><i class="fas fa-check"></i>Price: $10/price</li>
+                    </ul>
+                    <button class="button">Order Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS for Swiper configuration -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
+</section>
+
+<section class ="footer">
+    <div class ="box-container">
+        <div class = "box">
+            <h3>Branches</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hà Nội </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Đà Nẵng </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Huế </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hải Phòng </a>
+        </div>
+    
+            
+        <div class = "box">
+            <h3>Contact Info</h3>
+            <a href="#"><i class="fas fa-phone"></i> 123-123-123 </a>
+            <a href="#"><i class="fas fa-phone"></i> 111-222-333 </a>
+            <a href="#"><i class="fas fa-envelope"></i> booking@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-envelope"></i> service@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam - 100000 </a>
+        </div>
+    
+        <div class = "box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook </a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+    
+    </div>
+    
+    <div class = "credit">Created by <span> Group 17</span> © 2024 Eventura. All right reserved</div>
+</section>
+    
+    <!--footer section end-->
+    
+    <!--theme toggler-->
+    <div class = "theme-toggler">
+        <div class = "toggle-btn">
+            <i class = "fas fa-cog"></i>
+        </div>
+    
+        <h3>Choose Color</h3>
+    
+        <div class = "buttons">
+            <div class="theme-btn" style = "background-color: #3867d6;"></div>
+            <div class="theme-btn" style = "background-color: #f7b731;"></div>
+            <div class="theme-btn" style = "background-color: #ff0033;"></div>
+            <div class="theme-btn" style = "background-color: #20bf6b;"></div>
+            <div class="theme-btn" style = "background-color: #fa8231;"></div>
+            <div class="theme-btn" style = "background-color: #fc427b;"></div>
+        </div>
+    </div>
+    
+    <!--Custome swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS file link -->
+    <script src="js/script.js"></script>    
+
+</body>
+</html>

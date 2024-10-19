@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer Website: login</title>
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Custome swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+<!-- Header section starts -->
+<header class="header">
+    <a href="index.html" class="logo"><span>Even</span>tura</a>
+    <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#voucher">Voucher</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="price.html">Events</a> 
+        <a href="index.html#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </nav>
+
+    <div class="user-actions">
+        <select id="language-select" aria-label="Change Language">
+            <option value="en" data-flag="imgs/Eng.png">English</option>
+            <option value="es" data-flag="imgs/Spain.png">Spanish</option>
+            <option value="fr" data-flag="imgs/France.png">French</option>
+        </select>
+    </div>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+</header>
+
+<section class="login">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/dashboard" method="POST"> <!-- Change action URL to your backend -->
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+        </form>
+
+        <!-- User actions and alternative login -->
+        <div class="user-actions">
+            <a href="index.html" class="signup-btn">Enter</a>
+        </div>
+        <div class="alternative-login">
+            <p>Or, Sign in with</p>
+            <div class="social-buttons">
+                <a href="index.html" class="social-btn google">
+                    <i class="fab fa-google"></i> <!-- Google Icon -->
+                </a>
+                <a href="index.html" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+                </a>
+                <a href="index.html" class="social-btn apple">
+                    <i class="fab fa-apple"></i> <!-- Apple Icon -->
+                </a>
+            </div>
+        </div>
+        <div class="register-link">
+            <p>Don't have an account? <a href="register.html" class="register-btn">Register here</a></p>
+        </div>
+    </div>
+</section>
+
+<section class ="footer">
+    <div class ="box-container">
+        <div class = "box">
+            <h3>Branches</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hà Nội </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hồ Chí Minh </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Đà Nẵng </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Huế </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hải Phòng </a>
+        </div>
+
+        
+        <div class = "box">
+            <h3>Contact Info</h3>
+            <a href="#"><i class="fas fa-phone"></i> 123-123-123 </a>
+            <a href="#"><i class="fas fa-phone"></i> 111-222-333 </a>
+            <a href="#"><i class="fas fa-envelope"></i> booking@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-envelope"></i> service@mail.eventura.com </a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam - 100000 </a>
+        </div>
+
+        <div class = "box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook </a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin </a>
+        </div>
+
+    </div>
+
+    <div class = "credit">Created by <span> Group 17</span> © 2024 Eventura. All right reserved</div>
+</section>
+
+<!--footer section end-->
+
+<!--theme toggler-->
+<div class = "theme-toggler">
+    <div class = "toggle-btn">
+        <i class = "fas fa-cog"></i>
+    </div>
+
+    <h3>Choose Color</h3>
+
+    <div class = "buttons">
+        <div class="theme-btn" style = "background-color: #3867d6;"></div>
+        <div class="theme-btn" style = "background-color: #f7b731;"></div>
+        <div class="theme-btn" style = "background-color: #ff0033;"></div>
+        <div class="theme-btn" style = "background-color: #20bf6b;"></div>
+        <div class="theme-btn" style = "background-color: #fa8231;"></div>
+        <div class="theme-btn" style = "background-color: #fc427b;"></div>
+    </div>
+</div>
+
+<!--Custome swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
