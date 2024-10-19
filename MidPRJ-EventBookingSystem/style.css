@@ -1,0 +1,565 @@
+/*Gallery*/
+.gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+    position: relative;
+    border: 1rem, solid, #333;
+    border-radius: .5rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* This is what ensures images cover their boxes */
+}
+
+.gallery .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .box-container .box .title {
+    position: absolute;
+    top:-10rem; 
+    left:0;
+    right:0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 0rem;
+    font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title {
+    top:0;
+}
+
+.gallery .box-container .box .icons {
+    position: absolute;
+    bottom:-10rem; 
+    left:0;
+    right:0;
+    background-color: #333;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.gallery .box-container .box:hover .icons {
+    bottom: 0;
+}
+
+.gallery .box-container .box .icons a {
+    font-size: 2rem;
+    margin: .5rem 1rem;
+    color:#fff;
+    text-decoration: none;
+}
+
+.gallery .box-container .box .icons a:hover {
+    color: var(--main-color);
+}
+
+.gallery .box-container .box .icons a.fa-heart.clicked {
+    color: var(--main-color);
+}
+
+.gallery .heading{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 80rem;
+}
+
+.gallery h3 {
+    color: #FFF;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.gallery h3 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* Gallery Modal Styling */
+#img-modal-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-modal {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+}
+
+#img-modal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#modal-close-btn, #prev-btn, #next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color:whitesmoke;
+}
+
+#modal-close-btn {
+    right: 20px;
+    top: 20px;
+    transform: none;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+
+/* Price Section */
+/* Price Page Specific Styles */
+.price-page .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.price-page .swiper-wrapper {
+    display: flex;
+}
+
+.price-page .swiper-slide {
+    flex-shrink: 0;
+    width: 300px; /* Adjust card width */
+    margin-right: 20px; /* Add margin to create spacing between slides */
+}
+
+.card {
+    width: 300px; /* Adjust the width to make it smaller */
+    height: 450px; /* Increase the height to make it longer */
+    background-color: #444;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.image-content {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: 250px; /* Set the height of the image container */
+    background-color: #f4f4f4; /* Background color for the image area */
+}
+
+.card-image {
+    width: 100%; /* Set the container to 100% width of its parent */
+    height: 250px; /* Set a fixed height for all images */
+    overflow: hidden; /* Hide any overflowed parts of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%; /* Ensures the image fits the card-image container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image keeps its aspect ratio and doesn't get stretched */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center; /* Center the text inside the content area */
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-content ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.button {
+    border: none;
+    font-size: 18px;
+    color: #eee;
+    padding: 8px 16px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    margin: 14px;
+    margin-top: -1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--main-color);
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 1000;
+    color: whitesmoke;
+    margin-top: -0.5rem;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.events-title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.events-title h1 {
+    font-size: 36px;
+    color: orangered;
+}
+
+.card-content ul{
+    list-style-type: none;
+    padding: 1rem 0;
+    margin-top: -2rem;
+}
+
+.card-content ul li{
+    font-size:1.5rem;
+    color:rgb(202, 199, 199);
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+
+.card-content ul li i{
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+/*review*/
+.review .box{
+    border-radius: .5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box .fa-quote-right{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.review .box .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box .user h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box .user span{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.review .box p{
+    line-height: 2;
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+}
+
+/*contact*/
+.contact {
+    display: flex;
+    flex-direction: column;  /* Ensure elements stack vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    text-align: center; /* Center the text */
+}
+
+.contact .heading {
+    margin-bottom: 1.5rem; /* Add some space below the heading */
+}
+
+/* Style the form to have two columns */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns */
+    gap: 1rem;  /* Space between columns */
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    background: #444;  /* Background color for the form */
+    border-radius: .5rem;  /*  Rounded corners */
+}
+
+/* Style input boxes to take full width of their column */
+.contact form .inputBox {
+    display: flex;
+    flex-direction: column;  /* Stack inputs vertically within inputBox */
+    gap: 1rem;  /* Space between inputs */
+}
+
+.contact form .inputBox input {
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+    box-sizing: border-box;  /* Ensure padding and borders are included */
+}
+
+/* Make textarea and submit button span both columns */
+.contact form textarea, .contact form input[type="button"] {
+    grid-column: span 2;
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+    box-sizing: border-box;  /* Ensure padding and borders are included */
+}
+
+/* Additional styling for the submit button */
+.contact form input[type="button"] {
+    background: #555;  /* Submit button background color */
+    border: none;  /* Emove border for the submit button */
+    cursor: pointer;  /* Change cursor on hover */
+}
+
+
+/*footer*/
+.footer{
+    background:#111;
+}
+
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #eee;
+}
+
+.footer .box-container .box a i{
+    padding-right: 0.5rem;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1.5rem;
+    color:#fff;
+}
+
+.footer .credit{
+    text-align: center;
+    border-bottom: 0.1rem solid #222;
+    color:#fff;
+    padding:2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+
+.footer .credit span{
+    color:var(--main-color); 
+}
+
+/*theme*/
+.theme-toggler{
+    position: fixed;
+    top: 10rem; right:-20rem;
+    background: #333;
+    z-index: 1000; 
+    width: 20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right: 0;
+}
+
+.theme-toggler h3{
+    color:#fff;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.theme-toggler .buttons{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #333;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*media-queries*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+  }
+
+  /*media-queries*/
+  @media (max-width: 768px) {
+    #menu-bars {
+        display: initial;
+        }   
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: #333;
+        border-top: .1rem solid #222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.5s ease; /* Add transition for smooth animation */
+        }
+    
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Shows the navbar */
+        }
+
+    .header .navbar a {
+        display: flex;
+        background: #222;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+        }
+
+    .fa-times {
+        transform: rotate(180deg);
+        }
+
+    .home .content h3{
+        font-size: 4rem;
+        }
+    }
+
+  
+
+  @media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .home-slider .swipper-slide {
+        width: 27rem;
+    }
+  }
