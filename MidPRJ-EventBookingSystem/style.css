@@ -1,3 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
+/**/
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #3867d6;
+}
+
+.nunito-class {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+/*body & html*/
+/**/
+body, html {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body {
+    background: #222;
+    
+}
+
+/**/
+section{
+    padding: 2rem 5%;
+}
+
+/*heading*/
+.heading {
+    text-align: center;
+    padding-top: 2rem;
+    color: #fff; 
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color); 
+    text-transform: uppercase;
+}
+
+/*service*/
+.voucher .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 1.5rem;
+}
+
+.voucher .box-container .box{
+    border-radius: .5rem;
+    background: #333;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.voucher .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #FFF;
+}
+
+.voucher .box-container .box h3{
+    font-size: 2.5rem;
+    color: #FFF;
+    padding: 1rem 0;
+}
+
+.voucher .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    line-height: 1.8;
+}
+
+.voucher .box-container .box p span{
+    color: var(--main-color);
+}
+
+/*menu*/
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 2rem; /* Adjusted padding */
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.btn:hover{
+    background: var(--main-color);
+}
+
+/*menu header*/
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .logo span{
+    color:var(--main-color)
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color)
+}
+
+/*menu header*/
+.header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .logo span {
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+/* Style for change language */
+#language-select {
+    appearance: none; /* Remove default styles */
+    width: 150px; /* Set width */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    background: #fff url('path/to/your/dropdown-arrow-icon.png') no-repeat right 10px center; /* Add dropdown arrow icon */
+    background-size: 15px; /* Size of the arrow icon */
+    font-size: 1.6rem; /* Font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Custom option styles */
+#language-select option {
+    background: none; /* No background for options */
+    background-size: 8px; /* Adjust size of flags here */
+    padding: 10px; /* Padding for options */
+}
+
+
+/* Styles for login and register buttons */
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center buttons horizontally */
+}
+
+.login {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the sign-up container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 3rem;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.user-actions {
+    text-align: center; /* Centers the button */
+    margin: 20px 0; /* Adds spacing above and below the button */
+}
+
+.user-actions .signup-btn {
+    display: inline-block; /* Makes a block button */
+    width: 100%; 
+    max-width: 300px; 
+    padding: 15px; 
+    font-size: 18px; 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 2px solid #333; /* Adds a border  */
+    cursor: pointer; /* Changes the cursor when hovering */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.user-actions .signup-btn:hover {
+    background-color: #555; 
+    border-color: #555; 
+    transform: scale(1.05); /* Adds zoom effect*/
+}
+
+.login-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-container a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.alternative-login p {
+    text-align: center; 
+    color: #333;
+    margin: 20px 0;
+}
+
+.footer1 {
+    text-align: center; /* Center footer text */
+    color: #fff; /* Set footer text color */
+    margin-top: 20px; /* Space above footer */
+    font-size: 2rem;
+}
+
+.social-buttons {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 10px; /* Space above the icons */
+}
+
+.social-btn {
+    font-size: 2rem; /* Adjust icon size */
+    color: #fff; /* Change to desired text color */
+    background-color: #444; /* Background color for social buttons */
+    padding: 0.5rem; /* Padding for buttons */
+    border-radius: 5px; /* Round corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+}
+
+.social-btn:hover {
+    background-color: #fff; /* Change to desired hover color */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Optional: Add margin between icons */
+.social-btn:not(:last-child) {
+    margin-right: 1rem; /* Space between buttons */
+}
+
+.register {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the sign-up container */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.register-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 3rem;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #555;
+}
+
+.register-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.register-container a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+
+#menu-bars {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*home*/
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 80rem;
+}
+
+.home .content h3{
+    color: #FFF;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    
+}
+.home .content h3 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .home-slider .swiper-slide {
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .content .btn {
+    padding:2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top:-1rem;
+
+}
+
+
+/*about us*/
+.about .heading{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 80rem;
+}
+
+.about .title h3{
+    color: #FFF;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+.about .title h3 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/**/
+.about .title h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .statement{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+    padding:1rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    border-radius: .5rem;
+    border:1rem solid #333;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.8rem;
+    color:#fff;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
 /*Gallery*/
 .gallery .box-container {
     display: grid;
