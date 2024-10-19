@@ -417,6 +417,7 @@ section{
 .register-container a:hover {
     text-decoration: underline;
 }
+/*Phanh's code end*/
 
 
 #menu-bars {
@@ -469,6 +470,7 @@ section{
 }
 
 
+/*Phanh's code start*/
 /*about us*/
 .about .heading{
     text-align: center;
@@ -534,7 +536,10 @@ section{
     padding: 1rem 0;
     line-height: 2;
 }
+/*Phanh's code end*/
 
+
+/*Dũng's code start*/
 /*Gallery*/
 .gallery .box-container {
     display: grid;
@@ -603,6 +608,7 @@ section{
     color: var(--main-color);
 }
 
+/**/
 .gallery .box-container .box .icons a.fa-heart.clicked {
     color: var(--main-color);
 }
@@ -678,6 +684,8 @@ section{
 }
 
 
+
+
 /* Price Section */
 /* Price Page Specific Styles */
 .price-page .slide-container {
@@ -717,7 +725,7 @@ section{
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     height: 250px; /* Set the height of the image container */
-    background-color: #f4f4f4; /* Background color for the image area */
+    background-color: #f4f4f4; /* Optional: background color for the image area */
 }
 
 .card-image {
@@ -818,6 +826,9 @@ section{
     margin-right: 1rem;
 }
 
+/*Dũng's code end*/
+
+/*Ân's code start*/
 /*review*/
 .review .box{
     border-radius: .5rem;
@@ -863,7 +874,9 @@ section{
     padding: .5rem 0;
     font-size: 1.6rem;
 }
+/*Ân's code end*/
 
+/*Duy's code start*/
 /*contact*/
 .contact {
     display: flex;
@@ -886,8 +899,8 @@ section{
     max-width: 800px;
     width: 100%;
     padding: 2rem;
-    background: #444;  /* Background color for the form */
-    border-radius: .5rem;  /*  Rounded corners */
+    background: #444;  /* Optional: background color for the form */
+    border-radius: .5rem;  /* Optional: rounded corners */
 }
 
 /* Style input boxes to take full width of their column */
@@ -923,12 +936,13 @@ section{
 
 /* Additional styling for the submit button */
 .contact form input[type="button"] {
-    background: #555;  /* Submit button background color */
-    border: none;  /* Emove border for the submit button */
-    cursor: pointer;  /* Change cursor on hover */
+    background: #555;  /* Optional: submit button background color */
+    border: none;  /* Optional: remove border for the submit button */
+    cursor: pointer;  /* Optional: change cursor on hover */
 }
+/*Duy's code end*/
 
-
+/*Bach's work*/
 /*footer*/
 .footer{
     background:#111;
@@ -1038,6 +1052,8 @@ section{
 }
 
 
+
+
 /*media-queries*/
 @media (max-width: 991px) {
     html {
@@ -1063,7 +1079,7 @@ section{
         top: 100%;left: 0;right: 0;
         background: #333;
         border-top: .1rem solid #222;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hidden state */
         transition: clip-path 0.5s ease; /* Add transition for smooth animation */
         }
     

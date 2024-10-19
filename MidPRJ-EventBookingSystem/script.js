@@ -71,7 +71,7 @@ var swiper = new Swiper(".review-slider",{
         disableOnInteraction:false,
     }
 }); 
-
+//
 // Initialize Swiper
 var swiper = new Swiper(".price-slider", {
     slidesPerView: 1,
@@ -95,6 +95,7 @@ var swiper = new Swiper(".price-slider", {
     }
 });
 
+//Bach's work
 // Get references to the theme toggler and the toggle button
 let themeToggler = document.querySelector('.theme-toggler');
 let toggleBtn = document.querySelector('.toggle-btn');
@@ -127,6 +128,7 @@ document.querySelectorAll('.theme-toggler .theme-btn').forEach(btn => {
     }
 });
 
+//Andy's work
 // Select the gallery section
 const gallerySection = document.getElementById('gallery');
 
@@ -194,6 +196,7 @@ document.querySelectorAll('.icons a').forEach(icon => {
         });
     }
 });
+//Andy's code end
 
 //Prevent scrolling on top of website after submit message
 document.getElementById('sendMessageBtn').addEventListener('click', function(event) {
